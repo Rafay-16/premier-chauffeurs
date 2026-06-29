@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Chauffeurs - GTA Limo Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Premier Chauffeurs</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#fleet">Fleet</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#booking" class="btn-book">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Premier Chauffeurs</h1>
+            <p>Professional Limousine Service for the Greater Toronto Area</p>
+            <a href="#booking" class="btn btn-primary">Book Your Ride</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>✈️ Airport Transfers</h3>
+                    <p>Reliable and professional airport pickup and drop-off service throughout the GTA. Flat rates from $110-$130.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🎉 Events</h3>
+                    <p>Make your special occasion unforgettable. Weddings, proms, parties, and celebrations - we've got you covered.</p>
+                </div>
+                <div class="service-card">
+                    <h3>💼 Corporate Travel</h3>
+                    <p>Professional chauffeur service for business meetings, conferences, and corporate events. $150/hour (2-hour minimum).</p>
+                </div>
+                <div class="service-card">
+                    <h3>🛣️ Long Distance</h3>
+                    <p>Need to travel beyond the GTA? We offer custom quotes for long-distance trips.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet">
+        <div class="container">
+            <h2>Our Fleet</h2>
+            <div class="fleet-grid">
+                <div class="fleet-card">
+                    <div class="fleet-image">🚙</div>
+                    <h3>Chevy Suburban 2026 LT 4WD</h3>
+                    <p><strong>Exterior:</strong> Black</p>
+                    <p><strong>Interior:</strong> Jet Black</p>
+                    <p><strong>Capacity:</strong> 7 Passengers</p>
+                    <p>Spacious and comfortable luxury SUV perfect for groups and long journeys.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Airport Transfers</h3>
+                    <p class="price">$110 - $130</p>
+                    <p>Flat rate for pickup and drop-off within GTA</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Hourly Chauffeur</h3>
+                    <p class="price">$150/hour</p>
+                    <p>Minimum 2 hours. Perfect for events and corporate travel.</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Long Distance</h3>
+                    <p class="price">Custom Quote</p>
+                    <p>Contact us for personalized rates on long-distance trips.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Book Your Ride</h2>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Type *</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="airport">Airport Transfer ($110-$130)</option>
+                        <option value="hourly">Hourly Chauffeur ($150/hour, 2hr min)</option>
+                        <option value="event">Event Service</option>
+                        <option value="corporate">Corporate Travel</option>
+                        <option value="longdistance">Long Distance (Custom Quote)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date *</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time *</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="passengers">Number of Passengers *</label>
+                    <input type="number" id="passengers" name="passengers" min="1" max="7" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Pickup Location *</label>
+                    <input type="text" id="location" name="location" placeholder="Street address or landmark" required>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination *</label>
+                    <input type="text" id="destination" name="destination" placeholder="Street address or landmark" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Special Requests</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Any special requests or notes..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Booking Request</button>
+            </form>
+            <p class="form-note">We'll contact you to confirm your booking.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📞 Phone</h3>
+                    <p><a href="tel:437-993-4129">437-993-4129</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:premierchauffeurscontact@gmail.com">premierchauffeurscontact@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>📍 Service Area</h3>
+                    <p>Greater Toronto Area (GTA)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Premier Chauffeurs. All rights reserved.</p>
+            <p>Professional Limousine Service | GTA</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
